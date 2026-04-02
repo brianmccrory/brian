@@ -1,0 +1,42 @@
+baseURL = 'https://brian.jazzofjapan.com'
+theme = 'hugo-bearblog'
+title = 'Brian McCrory'
+author = 'Brian McCrory'
+copyright = '© Brian McCrory'
+languageCode = 'en-US'
+enableRobotsTXT = true
+capitalizeListTitles = false
+enableGitInfo = true # automatic lastmod based on git
+
+[frontmatter]
+  date = [":filename", ":default"]
+
+# disableKinds = ["taxonomy"]
+# ignoreErrors = ["error-disable-taxonomy"]
+[permalinks]
+  [permalinks.page]
+    blog = "/:contentbasename/"
+  [permalinks.term]
+    tags = "/:slug/"
+
+[params]
+  description = 'Drafts'
+  dateFormat = "Jan 02, 2006"
+  favicon = 'favicon.ico'
+  hideMadeWithLine = true
+  enablePostNavigator = true
+
+[markup]
+  [markup.highlight]
+    style = 'friendly'
+    lineNos = false
+    lineNumbersInTable = false
+    codeFences = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
