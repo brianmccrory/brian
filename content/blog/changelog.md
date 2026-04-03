@@ -59,7 +59,7 @@ _This briefly shows the major technical changes for how I write and publish Jazz
 
 ```text
 Jazz of Japan:
-v1                        v2  v3      v4              v5
-|-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
+v1                  v2  v3      v4              v5
+|-----|-----|-----|-----|-----|-----|-----|-----|-----|
 2018  '19   '20   '21   '22   '23   '24   '25   '26   '27
 ```
