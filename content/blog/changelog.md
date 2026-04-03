@@ -6,7 +6,7 @@ tags: [versions]
 notes: content moved/copied from parts of version-history.org and technical.org
 ---
 
-_This briefly shows the major technical changes for how I write and publish Jazz of Japan. More details for each change will come in individual [files](/), and the [timeline](https://about.jazzofjapan.com/indexes/timeline/) shows the history of Jazz of Japan articles._
+_This briefly shows the major technical changes for how I write and publish Jazz of Japan. For a timeline of Jazz of Japan articles, see [Publish History Timeline](https://about.jazzofjapan.com/indexes/timeline/)._
 
 ### February 2026
 
@@ -46,13 +46,14 @@ _This briefly shows the major technical changes for how I write and publish Jazz
 
 - Moved to Substack as “J Jazz Substack” (v2.0)
 - Ran newsletter and website at `jjazz.substack.com`
+- [Details]({{<relref v2-0-substack>}})
 
 ### January 2018
 
 - Released “J Jazz: Modern Jazz From Japan” on January 26, 2018 (v1.0)
 - Ran on WordPress/AWS/Google App Engine at `jjazzist.com`
 - Install WordPress locally for writing/testing, push to cloud to publish
-
+- [Details]({{<relref v1-0-wordpress>}})
 ---
 
 # Timeline
