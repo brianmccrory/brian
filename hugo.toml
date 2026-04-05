@@ -35,3 +35,6 @@ enableGitInfo = true # automatic lastmod based on git
   [markup.goldmark.renderer]
     unsafe = true
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
