@@ -6,31 +6,9 @@
 
 /This briefly shows the major technical changes for how I write and publish Jazz of Japan. For a timeline of Jazz of Japan articles, see [[https://about.jazzofjapan.com/indexes/timeline/][Publish History Timeline]]./
 
-: v1                  v2  v3      v4              v5
-: |-----|-----|-----|-----|-----|-----|-----|-----|-----|
-: 2018  '19   '20   '21   '22   '23   '24   '25   '26   '27
-
 ** February 2026
 
 - Moved from Substack to Buttondown as “Jazz of Japan” (v5.0)
-
-** September 2025
-
-- Moved resources (unified index, etc) to gitpages at =docs.jazzofjapan.com=
-- Hooked up scripts and GitHub build actions so that indexes are automatically updated
-
-** August 2025
-
-- Replaced Substack static pages with individual posts
-
-** June 2025
-
-- Converted writing source files from Markdown to Org format (**.md to **.org)
-- Replaced infrastructure management from Java to Python
-
-** March 2025
-
-- Converted markdown files (writing and data source files) from Jekyll to Hugo
 
 ** May 2023
 
@@ -56,3 +34,7 @@
 - Ran on WordPress/AWS/Google App Engine at =jjazzist.com=
 - Install WordPress locally for writing/testing, push to cloud to publish
 - [[/v1-0-wordpress][Details]]
+
+: v1                  v2  v3      v4              v5
+: |-----|-----|-----|-----|-----|-----|-----|-----|-----|
+: 2018  '19   '20   '21   '22   '23   '24   '25   '26   '27
