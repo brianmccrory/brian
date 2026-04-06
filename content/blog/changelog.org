@@ -40,9 +40,9 @@
 
 ** January 2022
 
-- Moved to GitHub + Jekyll as “Jazz of Japan” (v3.0)
+- Moved to GitHub/Jekyll/Markdown as “Jazz of Japan” (v3.0)
 - Moved to =jazzofjapan.com=
-- Wrote infrastructure management code in Java + Eclipse
+- [[/v3-0-github][Details]]
 
 ** May 2021
 
