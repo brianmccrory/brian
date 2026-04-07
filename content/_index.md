@@ -1,1 +1,1 @@
-_[Jazz of Japan](https://www.jazzofjapan.com/) is primarily for articles-based for sharing writing, photos, audio, but I have also experimented with different platforms, tools, and writing environments._
+_[Jazz of Japan](https://www.jazzofjapan.com/) is primarily articles-based for sharing writing, photos, and audio. Throughout, I have experimented with different platforms, tools, and writing environments._
