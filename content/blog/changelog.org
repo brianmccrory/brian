@@ -1,7 +1,7 @@
 #+title: Changelog
 #+date: 2026-04-02
 #+draft: false
-#+tags[]: versions
+#+tags[]:
 #+notes: content moved/copied from parts of version-history.org and technical.org
 
 /This briefly shows the major technical changes for how I write and publish Jazz of Japan. For a timeline of Jazz of Japan articles, see [[https://about.jazzofjapan.com/indexes/timeline/][Publish History Timeline]]./
@@ -25,7 +25,7 @@
 - Restarted newsletter with optional membership
 
 ** September 2022
-- Started Preview posts [[/v3-1-previews][(v3.1)]]
+- Started Preview posts
 
 ** January 2022
 - Moved to GitHub/Jekyll/Markdown as “Jazz of Japan” [[/v3-0-github][(v3.0)]]

@@ -1,0 +1,51 @@
+#+title: Remove static pages
+#+date: 2025-08-19
+#+draft: true
+#+tags[]: notags
+
+
+* August 2025: Removed static pages
+
+[v4.3]  2025-08-19
+
+Converted backend from hugo to org-mode/python (markdown source files, scripts)
+- migrated writing env and dev backend from hugo to org-mode and python scripts
+- production is unchanged (Substack)
+- see README-ORG-MIGRATION.md
+- 2025/7/20: removed Google analytics and deleted account
+  - removed from substack settings
+  - 'jazzofjapan' property id: 429029216 -> moved to trash can
+  - 'brianmccrory' account id: 303746524 -> moved to trash can (deleted after 35 days)
+- Google search console is still active
+  - https://search.google.com/search-console?resource_id=sc-domain:jazzofjapan.com
+- 2025/7/31 - converted top line links in each Clubs article to subtitles in Substack posts (** level headings in clubs.org)
+
+remove static pages and links on homepage:
+- Unified Index
+- Publish History Timeline
+- Audio Mixes
+
+Replaced them with posts so that I could add ‘resources’ tag to them and have them available in the navigation under a “Resources” tag link (like Albums, Clubs, Guides):
+- Audio Excerpts
+- Directory (combined Unified Index + Publish Timeline)
+
+To come:
+- Start Here (Albums by Category)
+
+Also, never liked the fact that clicking on homepage links opens them in a new window, even though they are still on my site.
+
+There is an option to include (static) pages in the nav, but I don’t want individual pages to be linked in the nav (except for About) because I want the nav to be as minimal as possible.
+
+
+* August 2025: Current Setup and Process
+
+Articles are written in Emacs org-mode files. Version control is through git and github repositories.
+
+Images are edited and formatted with gimp and imagemagick. Audio is edited and managed with audacity and ffmpeg. Media is saved to a separate git repo.
+
+Articles are published to the newsletter and website article by exporting from org-mode format to html, then copied into the Substack editor. Images and audio files are copied into the editor separately.
+
+I use Python scripts to update certain pages dynamically using the data in the org-mode files and some supporting data files. The dynamically generated pages include:
+- Unified Index
+- Publish Timeline
+- Audio Mixes

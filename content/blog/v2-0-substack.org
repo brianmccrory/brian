@@ -1,7 +1,7 @@
 #+title: J Jazz v2.0 (Substack)
 #+date: 2021-05-30
 #+draft: false
-#+tags[]: versions
+#+tags[]: versions wordpress substack migration
 
 /WordPress was becoming an unnecessary hassle, and I found an easier alternative by moving to Substack./
 
@@ -19,6 +19,62 @@ To move my articles from WordPress to Substack, I used Substack’s migration to
 
 In May 2021, after importing, cleaning, and organizing my articles on Substack, I published the new “J Jazz” Substack on [[https://web.archive.org/web/20210522222118/https://jjazz.substack.com/][=jjazz.substack.com=]] (no longer in use).
 
-Next, I began to send out new newsletter emails for “Albums” articles on a regular basis, and continued to publish 200+ articles about Japanese jazz albums.
+In this second phase, I began to send out new newsletter emails for “Albums” articles through Substack on a regular basis. I continued publishing about 150 articles about Japanese jazz albums until the following year, when I decided to migrate the project to a static site.
 
-I used Substack for the second phase of this project until about a year later on January 21, 2022. After this, I migrated the newsletter archive to a static page site using GitHub and Jekyll, closed my `jjazz` Substack account, and retired the newsletter (temporarily).
+# * Details
+
+# *May 8-10, 2021:*
+
+# - Created Substack newsletter: =jjazz.substack.com=
+# - Updated Google Search Console and Google Analytics
+# - Created backup copy WordPress data
+# - Deleted AWS Instance (WordPress hosting)
+# - Shutdown Amazon EC2 instance, elastic IP, security groups, storage, key pairs, and close account
+# - Updated DNS to redirect =jjazzist.com= to =jjazz.substack.com=
+# - Retired the =jjazzist.com= domain
+# - Managed articles in spreadsheet of posts imported from WordPress to Substack, used as an ongoing manual tracking system for all articles with  numbering/status/dates/ordering/tags/...
+
+# *Early writing process on Substack*
+
+# My process for publishing new articles on Substack is described here. I used a version of this as my manual checklist when publishing new articles. I no longer do many of these steps, such as uploading videos, and other processes have been improved, streamlines, or eliminated as I took my project through its various versions.
+
+# (All published posts from WordPress were imported to Substack, but not draft posts, so anything I had been working on in WordPress as a draft was not imported to Substack so I would copy that over manually.)
+
+# *REVIEW CHECKLIST:*
+# - Reformat the Musicians area for older/imported articles:
+#   - Remove "Leader:" line
+#   - Move Kanji below (to cleanup Members area/readability)
+#   - Add leader's website link to leader's name (remove standalone URL)
+# - Make sure images are not too big (1024 a good standard)
+# - Check image sizes/quality (no reason to stick to small cover images less than 460x460)
+# - Members/Musicians: most posts use Members, except Niwatazumi, Whisper Not, and "Guest Musicians" occasionally
+# - Proofread and revise text
+# - Check consistency of " and ' (“, ’, etc), dashes, hyphens, and extra spaces
+# - Check album titles are italicized and song titles are "Quoted"
+# - Add kanji where needed (musician names)
+# - Compare original WordPress version with new Substack version and fix differences
+# - Add embedded video links
+# - With imported posts:
+#    - Double check publish date (which can be wrong depending on import)
+#    - For [UNPUBLISHED]/imported posts, be sure to update publish date
+
+# *PUBLISH CHECKLIST:*
+# 1. Upload video to YouTube (add to playlist and reorder in playlist if necessary)
+# 2. Add video link to post
+# 3. Review post a final time
+# 4. Publish to substack and email
+# 5. Update www.jazzofjapan.com (github)
+# 6. Update twitter (if already posted, do a tweet reply with new substack link)
+# 	twitter search: from:jjazzcollector since:2018-01-01 until:2018-03-01
+# 	add #hashtags including musician names in English and Japanese (Kanji)
+# 7. Update instagram (unless already posted, then update link or other info)
+# 8. On twitter, thank users who retweet posts (go back through previous Notifications)
+# 9. Update "substack status" spreadsheet
+# 10. Move jjazzist photos into "DONE" folders
+# 11. Update google docs (jjazzcollector) and/or github pages
+# 	- run java program to recreate indexes
+# 12. Update google search console with new link (optional)
+# 13. Periodically export data as a backup (from substack to laptop Jjazzist folder)
+# 14. Periodically save images/backups/data to external memory
+# 15. Update Japanese names spreadsheet (in java program's data file) (optional)
+# 16. Update the "By way of intro" post with link from list of prior articles

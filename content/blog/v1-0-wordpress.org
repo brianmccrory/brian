@@ -1,7 +1,7 @@
 #+title: J Jazz: Modern Jazz From Japan v1.0 (WordPress)
 #+date: 2018-01-26
 #+draft: false
-#+tags[]: versions
+#+tags[]: versions wordpress
 
 /This online project was first published online in January 2018, but I began to take notes on this topic when visiting Japanese jazz clubs and buying Japanese jazz albums in 2005. Those dozen or so physical notebooks became essential documentation for me as an early version of this project. I continue to take handwritten notes today./
 
@@ -44,8 +44,9 @@ To get started, I focused on writing shorter posts with a goal of 4-5 sentences 
 
 There was a lot to do for each article, and the most enjoyable part was listening, re-listening, and enjoying albums from my Japanese jazz collection. It was also exciting to share this with other people who had an interest in this genre but didn’t have much access to information about it in English.
 
-Starting with the first post "Kazumi Ikenaga: Niwatazumi" on Jan 26, 2018 through the last WordPress post "Yoshihito “P” Koizumi P-Project: By Coincidence" on May 5, 2021, I published posts for 136 albums in this first 3 and 1/2 years.
+* Results
 
+Starting with the first post "Kazumi Ikenaga: Niwatazumi" on Jan 26, 2018 through the last WordPress post "Yoshihito “P” Koizumi P-Project: By Coincidence" on May 5, 2021, I published posts for 136 albums in this first 3 and 1/2 years.
 
 * Issues with WordPress
 

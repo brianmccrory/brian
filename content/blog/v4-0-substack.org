@@ -1,13 +1,13 @@
 #+title: Jazz of Japan v4.0 (Substack + Markdown)
 #+date: 2023-05-03
 #+draft: false
-#+tags[]: versions
+#+tags[]: versions github substack migration
 
 * May 2023: Moving to Substack + Markdown
 
 Now that the entire system was stored in GitHub as articles, images, audio, layouts, and code, I returned to Substack to reintroduce the newsletter functionality and update the website’s look and feel.
 
-While the [[/v3-0-github][GitHub Pages with Markdown version]] was functional and straightforward, there were some limitations that I was facing. Aside from social media promotion (that I had tried before, and decided to avoid), there was no convenient way to share articles more widely, such as with a newsletter.
+While the GitHub/Jekyll-based version was functional and straightforward, there were some limitations that I was facing. Aside from social media promotion (that I had tried before, and decided to avoid), there was no convenient way to share articles more widely, such as with a newsletter.
 
 Considering relaunching the newsletter, I was being drawn back to Substack’s ease of use, clean interface, and tools. One of the biggest benefits of using Substack was that it was such a convenient place to write. The interface was clean and welcoming, the tools and settings were simple and pared down, and there was a wealth of support and an encouraging community. The system just seemed to make you want to write.
 
@@ -15,7 +15,7 @@ Considering relaunching the newsletter, I was being drawn back to Substack’s e
 
 As part of a test of how I could integrate Substack with my Markdown files, I began by importing all my files from GitHub pages to Substack. It started off well, so I tentatively shut down the GitHub Pages project and continued to send articles using Substack for the newsletter and archive. I also moved my custom domain =jazzofjapan.com= from GitHub Pages to my Substack publication.
 
-There was one important difference compared with how I had [[v2-0-substack][used Substack in the past]]: This time, I would use Substack for the newsletter and website, but I would continue to write and maintain Markdown files and data files on my laptop, as I had started doing with the GitHub Pages version. I continued to store all these files in Git and back them up on GitHub. The reason for this was to maintain control over the authoritative content that was the text for my articles, data, images, layouts, templates, and so on. I would not have to worry about using Substack’s editor window in a browser to write, edit, or make changes, without knowing exactly what had changed from version to version.
+There was one important difference compared with how I had used Substack before. This time, I would use Substack for the newsletter and website, but I would continue to write and maintain Markdown files and data files on my laptop, as I had started doing with the GitHub Pages version. I continued to store all these files in Git and back them up on GitHub. The reason for this was to maintain control over the authoritative content that was the text for my articles, data, images, layouts, templates, and so on. I would not have to worry about using Substack’s editor window in a browser to write, edit, or make changes, without knowing exactly what had changed from version to version.
 
 In effect, I was maintaining two systems for writing and publishing. I used Substack to handle the new v4.0 website with public articles, subscriptions, and newsletter emails. At the same time, I used Markdown and Git on my laptop for writing, data, and scripts for validation, templating, automatic indexing, and other tools.
 
@@ -27,7 +27,7 @@ Also important, I could write freely in version-controlled plain-text Markdown f
 
 With Jekyll running on my laptop, it was easy to incorporate common sections into my articles. I used these sections to include the album’s musicians, audio, video, and links. I could combine my free-form writing with data-driven portions. For example, I could transform keys like =fumio-karashima= into “ ・ Fumio Karashima (website) - piano” and include the Japanese name for each musician. I could use a standard layout by using my templates, data, and scripts to format my articles consistently in the way that I wanted, and I could change those layouts and templates later, easily, if I wanted to.
 
-Finally, I could cut and paste the formatted output directly into a Substack editor window. As a manual process, this worked conveniently but not completely: Article attachments like images and audio files needed to be dragged into the Substack editor, one by one, and moved within the text to the location I wanted them to appear. Since my articles usually contained many images and an audio file, this was a problem that I wanted to solve someday. I wanted a solution where, ideally, the whole formatted article, with images and audio in their proper places, could be uploaded through a public Substack API, but Substack did not offer this.
+Finally, when viewing Jekyll’s locally rendered Markdown page in a browser, I could cut and paste the formatted output directly into a Substack editor window. As a manual process, this worked conveniently but not completely: Article attachments like images and audio files needed to be dragged into the Substack editor, one by one, and moved within the text to the location I wanted them to appear. Since my articles usually contained many images and an audio file, this was a problem that I wanted to solve someday. I wanted a solution where, ideally, the whole formatted article, with images and audio in their proper places, could be uploaded through a public Substack API, but Substack did not offer this.
 
 With all of my Markdown files stored in Git on my laptop, it was also reassuring that I had a cloud-based backup on GitHub for everything with a complete version history. Plus, I could clone that repository anytime on another machine. This would be a lifesaver in case anything disastrous should happen to my local copy or the copies that I was uploading to Substack.
 
@@ -43,10 +43,63 @@ To address the problem of the text of my articles diverging between my source co
 
 * Results
 
-By moving to Substack with Markdown, I combined the advantages of my Markdown- and Git-based authoring system from [[/v3-0-github/][v3.0]] with the functionality of a Substack newsletter and archive like I had previously used in [[/v2-0-substack][v2.0]].
+By moving to Substack with Markdown, I combined the advantages of my Markdown- and Git-based authoring system with the functionality of a Substack newsletter and archive like I had previously used in an earlier version of this site.
 
-After restarting the newsletter in May 2023 and importing all previous articles (excluding [[/v3-1-previews][Previews]]), I continued to test new Substack features like newsletter sections, paid subscriptions, and additional newsletters, but I usually came back to my guiding principle of “simpler is better”.
+After restarting the newsletter in May 2023 and importing all previous articles (excluding album previews), I continued to test new Substack features like newsletter sections, paid subscriptions, and additional newsletters, but I usually came back to my guiding principle of “simpler is better”.
 
 In addition to continuing to write new Albums articles, I also started to publish articles in the Clubs and Guides categories. Paid subscribers also started to generously contribute to my newsletter, which made me extremely happy and boosted my motivation to keep it going with regular and better updates.
 
 The fundamental change from the reader’s point of view was that the Jazz of Japan newsletter was restarted, and it was back on Substack with the complete archive. I continued to use Substack for Jazz of Japan until February 2026, making various changes to my writing environment throughout.
+
+# * Details
+
+# *May 4-8, 2023:*
+# - Created Substack newsletter =jazzofjapan.substack.com=
+# - Imported albums from =jazzofjapan.com= using Substack's import and a lot of hand-editing
+# - Added images back to each article (drag and drop from =jazzofjapan.com= to Substack)
+# - Added Albums tag to each article
+# - Fixed article slugs that ended with “html”, like =/p/page-titlehtml= (problem with some imports)
+# - Removed the clubs =*.md= files and redirected the main =clubs/index.md= to Substack
+# - Moved all the Album Previews (=quick_take: true=) to a separate directory, and updated the live website to unpublish all previews
+# - Updated Java program =jjazz-substack-scraper= to generate musicians index page by crawling/parsing all articles (with some other validation such as slugs and tags)
+# - Added Jekyll =redirect_to:= tag (removed later) to redirect each page to its equivalent page on Substack (for each page, from jjazzist.com/... to jjazz.substack.com/...) to preserve the Google search results, verified through Google Search Console
+# - Moved custom domain =www.substack.com= from GitHub pages to Substack (updated DNS records and paid $50 Substack custom domain fee)
+# - Maintain URL Redirect Record to allow apex to www redirects: =URL Redirect Record @ https://www.jazzofjapan.com=
+
+# I was also using Jekyll files to manage the overall collection of articles. Some details included:
+
+# - The list of articles published to Substack managed in =_data/posts.csv=.
+# - When a post *.md file is added here, then the post is considered published live to Substack, and it showed up in the index pages I created in Jekyll.
+# - For multiple posts on the same day, the order in the file reflects the published order, just as with all other rows.
+# - The template name (matching those in =data/posts.csv=) must match the Substack slug to enable linking to the Substack URL in indexes.
+# - The csv file controlled publishing in a central place. (Another valid option would be to set a (published) date in each *.md file.)
+# - Jekyll collections in folders _albums, _clubs, _guides
+# - drafts/ subfolders are just for code organization, as the =_data/posts.csv= file controls whether the file is published or not.
+# - The =_config.yaml= file sets permalinks for each collection so that the subfolders do not become part of the URL.
+
+# The writing process for Substack + Markdown, including the automatically generated index files, was along these lines:*
+
+# Albums and Musicians Index Files:
+# - =albums.md= and =musicians.md= are dynamically generated based on the data files in jekyll, producing =_site/albums.html= and =_site/musicians.html= each time a file is updated.
+# - =resources-albums-index.md= and =resources-musicians-index.md= are generated by a Java program.
+
+# The two generated Jekyll html files can be compared to see if anything is amiss:
+
+# #+BEGIN_EXAMPLE
+# diff _site/albums.html _site/resources-albums-index.html
+# diff _site/musicians.html _site/resources-musicians-index.html
+# #+END_EXAMPLE
+
+# Audio filename format for excerpts:
+# - Audio filenames in the format: =01-The-Track-Name.mp3=
+# - Format: Track number + dash + track name (formatted as it should appear on the album display page and the audio mix page) + '.mp3'
+# - Capitalization and formatting should be as intended to be displayed.
+# - Spaces between words can be filled with dashes or underscores.
+# - Valid characters are those supported in filenames: =[a-zA-Z0-9',.#]= (see code for actual regex).
+# - Filenames are checked by =AssetsChecker.java= in =jazzofjapan_java=. This program also checks to make sure the specified audio_embed matches the mp3 filename.
+
+# Simple checklist:
+# 1. Run =MusiciansChecker.java= program to verify musician names/keys are correct
+# 1. Update Albums Index page on Substack (copy/paste from Jekyll version at =/albums=)
+# 1. Update Musicians Index page on Substack (copy/paste from Jeykyll version at =/musicians=)
+# 1. Update =data/posts.csv= and =article-status.ods=
