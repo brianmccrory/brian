@@ -1,0 +1,12 @@
+#+title: Markdown to Org mode migration
+#+date: 2025-06-12
+#+draft: true
+#+tags[]: tools
+
+* June 2025
+
+This change originally started as an exploratory project, to see what it would take to migrate from Markdown format to Emacs Org mode.
+
+My main goal was to simplify my writing environment by moving from editing Markdown files in Eclipse (copied from Scrivener originals - I forget when I dropped Scrivener completely) to editing Org-mode files in Emacs.
+
+This also allowed me to improve my manual Substack import process. Instead of copy and pasting rendered HTML pages Hugo and Markdown files, I could generate my rendered output through the Emacs Org-mode export. This would mean that Hugo was no longer an essential part of the pipeline that was my writing and publishing process. (I still use Hugo for the static site and this site.)

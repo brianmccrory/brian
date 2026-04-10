@@ -1,7 +1,7 @@
 #+title: Jazz of Japan v3.0 (GitHub)
-#+date: 2022-01-01
+#+date: 2022-01-18
 #+draft: false
-#+tags[]: versions substack github migration
+#+tags[]: versions
 
 * January 2022: Moving from Substack to GitHub
 
@@ -80,7 +80,9 @@ The fundamental change from the reader’s point of view was that the Jazz of Ja
 In January 2022, after migrating my newsletter archive (about 150 articles) to my static site on GitHub, I retired the =jjazz= newsletter, closed my Substack account, and continued to publish new articles on GitHub.
 
 * September 2022 - January 2023: Preview posts
-
+:PROPERTIES:
+:CUSTOM_ID: preview-posts
+:END:
 I had a long list of albums that I still wanted to introduce, but not enough time to write an article for each that I would be satisfied with. I decided to release articles I would call Previews. These would be very similar to the regular album articles I had been posting, introducing each album with images and audio excerpts, but without any descriptive comments about the musicians or songs. I planned to release Previews in quick succession to the website, to get a page up for each with images and audio, ready to be extended later.
 
 In September 2022, I started releasing Preview articles. I added 53 Preview articles from September 21, 2022 through January 23, 2023.

@@ -21,7 +21,6 @@ enableGitInfo = true # automatic lastmod based on git
 
 [params]
   description = 'Brian'
-  dateFormat = "Jan 02, 2006"
   favicon = 'favicon.ico'
   hideMadeWithLine = true
   enablePostNavigator = true

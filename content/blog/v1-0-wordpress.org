@@ -1,7 +1,7 @@
 #+title: J Jazz: Modern Jazz From Japan v1.0 (WordPress)
 #+date: 2018-01-26
 #+draft: false
-#+tags[]: versions wordpress
+#+tags[]: versions
 
 /This online project was first published online in January 2018, but I began to take notes on this topic when visiting Japanese jazz clubs and buying Japanese jazz albums in 2005. Those dozen or so physical notebooks became essential documentation for me as an early version of this project. I continue to take handwritten notes today./
 

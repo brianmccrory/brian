@@ -7,39 +7,35 @@
 /This briefly shows the major technical changes for how I write and publish Jazz of Japan. For a timeline of Jazz of Japan articles, see [[https://about.jazzofjapan.com/indexes/timeline/][Publish History Timeline]]./
 
 ** February 2026
-
 - Moved from Substack to Buttondown as “Jazz of Japan” (v5.0)
 
 ** September 2025
-- Moved resources to subdomain (v4.3)
+- Moved resources to subdomain
 
 ** June 2025
-- Converted files from Markdown to Org (v4.2)
+- Converted files from Markdown to Org mode
 
 ** March 2025
-- Moved from Jekyll to Hugo (v4.1)
+- Converted files from [[/jekyll-to-hugo-migration/][Jekyll to Hugo]]
 
 ** May 2023
-
-- Moved to Substack + Markdown as “Jazz of Japan” [[/v4-0-substack][(v4.0)]]
-- Restarted newsletter with optional membership
+- Moved to Substack + Markdown as “Jazz of Japan” and restarted newsletter [[/v4-0-substack/][(v4.0)]]
 
 ** September 2022
-- Started Preview posts
+- Started adding [[/v3-0-github/#preview-posts][Preview posts]]
 
 ** January 2022
-- Moved to GitHub/Jekyll/Markdown as “Jazz of Japan” [[/v3-0-github][(v3.0)]]
-- Moved to =jazzofjapan.com=
+- Moved to GitHub/Jekyll/Markdown as “Jazz of Japan” [[/v3-0-github/][(v3.0)]]
+- Ran website at =jazzofjapan.com=
 
 ** May 2021
-- Moved to Substack as “J Jazz Substack” [[/v2-0-substack][(v2.0)]]
+- Moved to Substack as “J Jazz Substack” [[/v2-0-substack/][(v2.0)]]
 - Ran newsletter and website at =jjazz.substack.com=
 
 ** January 2018
 
-- Released “J Jazz: Modern Jazz From Japan” on January 26, 2018 [[/v1-0-wordpress][(v1.0)]]
-- Ran on WordPress/AWS/Google App Engine at =jjazzist.com=
-- Install WordPress locally for writing/testing, push to cloud to publish
+- Released “J Jazz: Modern Jazz From Japan” on January 26, 2018 [[/v1-0-wordpress/][(v1.0)]]
+- Ran website at =jjazzist.com=
 
 : v1                  v2  v3      v4              v5
 : |-----|-----|-----|-----|-----|-----|-----|-----|-----|
