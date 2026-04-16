@@ -1,8 +1,0 @@
-#+title: Indexes subdomain
-#+date: 2025-09-10
-#+draft: true
-#+tags[]: tools
-
-* September 2025: Move resources to docs.jazzofjapan.com
-
-/Note: =docs.jazzofjapan.com= was later changed to =about.jazzofjapan.com=./

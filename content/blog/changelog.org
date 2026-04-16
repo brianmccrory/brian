@@ -1,13 +1,13 @@
 #+title: Changelog
 #+date: 2026-04-02
-#+draft: false
+#+draft: true
 #+tags[]:
 #+notes: content moved/copied from parts of version-history.org and technical.org
 
 /This briefly shows the major technical changes for how I write and publish Jazz of Japan. For a timeline of Jazz of Japan articles, see [[https://about.jazzofjapan.com/indexes/timeline/][Publish History Timeline]]./
 
 ** February 2026
-- Moved from Substack to Buttondown as “Jazz of Japan” (v5.0)
+- Moved from Substack to Buttondown as “Jazz of Japan” [[/v5-0-buttondown/][(v5.0)]]
 
 ** September 2025
 - Moved resources to subdomain
@@ -16,7 +16,7 @@
 - Converted files from Markdown to Org mode
 
 ** March 2025
-- Converted files from [[/jekyll-to-hugo-migration/][Jekyll to Hugo]]
+- Converted files from Jekyll to Hugo
 
 ** May 2023
 - Moved to Substack + Markdown as “Jazz of Japan” and restarted newsletter [[/v4-0-substack/][(v4.0)]]

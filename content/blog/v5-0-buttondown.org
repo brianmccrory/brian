@@ -1,143 +1,26 @@
 #+title: Jazz of Japan v5.0 (Buttondown)
-#+date: 2026-02-01
-#+draft: true
-#+tags[]: major-versions substack buttondown
+#+date: 2026-04-15
+#+draft: false
+#+tags[]: versions
 
-* [v5.0] Buttondown migration (Feb 2026)
+* February 2026: Buttondown migration
 
+I had been considering alternatives to Substack for some time, and eventually I decided to give [[https://buttondown.com/refer/jazzofjapan][Buttondown]] [fn::This referral link includes a discount for the first month: https://buttondown.com/refer/jazzofjapan] a try. Why was I considering a move? Well, for a long time, there were elements of Substack that I was unsatisfied with that I may describe later (there is no shortage of articles and opinions on the web on this topic), and this feeling was increasingly bothering me.
 
-*2026-03-03: [v5.1?]*
-  - converted single large *org files to individual *org files
-  - converted markdown files to org in “brian” hugo site
+Buttondown was attractive for a number of reasons: their focus on newsletters, support for Markdown format, having an API, and their size and goals as a company. On the downside, running a newsletter on Buttondown would no longer be free as it was with Substack (which was not really free, since they were taking 10% of money earned through paid subscriptions while inserting their ads, upsells, and branding as they wished). Still, the advantages of Buttondown, and the independence and control that I would regain by moving off of Substack, were worth it to me, and it’s good to pay for products that are worth it.
 
+I signed up with Buttondown and setup my new  Jazz of Japan newsletter there, paying $290 USD for one year to get the features I wanted. I wrote a program to automate the process of transforming my Org mode articles to Markdown and uploading them to Buttondown through their API. [fn::As an alternative to programming scripts, Buttondown also provides a command-line interface, but I was already using my own scripts for tasks supporting my writing, so I continued using scripts to integrate with Buttondown’s API. For writers who want to import their newsletter archive to Buttondown more easily, there are ways to import a Substack archive that don’t require any programming or using APIs, up to and including personal concierge support from Buttondown.] Using my archive of markup files and images, a Python script, and Buttondown’s API, I imported my complete archive and subscriber list to =buttondown.com/jazzofjapan=.
 
-*  2026 February
+Because all of my 350+ articles were already in markup format, using Buttondown’s API to import my newsletter to their platform was straightforward. Uploading my articles directly through an API meant that I did not have to export/import articles from Substack to Buttondown. This gave me greater control and visibility into how my articles would be transformed during the migration.
 
-[v5.0] Moved to Buttondown as “Jazz of Japan”.
-- Used API, scripts, and writing files (org/markdown) to migrate all articles and subscribers to the new platform. (Means I did not have to export/import articles directly from Substack to Buttondown; Subsciber list was exported, though).
+After verifying that everything was uploaded and appeared to be in a good state, I updated my DNS settings to move my custom domain =www.jazzofjapan.com= from my Substack publication to my Buttondown newsletter and archive. Without a custom domain set on Substack, my Substack publication was reset to the default domain, and my Substack archive was still available at =jazzofjapan.substack.com=. To avoid having my web archive duplicated, I unpublished all my articles on Substack so that they were solely available on through my Buttondown archive. I had been using the same custom domain since 2022, so moving my archive of 350+ pages from Substack to Buttondown did not affect SEO or Google search results, as the =www.jazzofjapan.com= domain remained the same. [fn::There was one difference: The format of individual article URLs changed from =/p/slug= to =/archive/slug/=. But, not to worry: the =/p/= URL versions are still supported by Buttondown as aliases or redirects for =/archive/=.]
 
+I was now up and running on Buttondown. I stopped sending newsletter emails updates through Substack, and my next newsletter email was sent through Buttondown with no problems or interruption.
 
-* March 2026: Quick Thoughts on Buttondown
+* Results
 
-I was recently asked about what I thought about Buttondown, as I moved my newsletter from Substack to Buttondown on Feb 16, 2026.
-
-I’m working on a longer answer but some of the major things for me are:
-
-/(Italicized notes are copied from my original response)/
-
-/For buttondown, I feel like I'm still in an evaluation phase, but for now, my thoughts, in brief:/
-
-1. Buttondown has an *API* that works great for writers with programming backgrounds.
-   - I write in markdown format (technically, “org” format) and upload my emails through a programming interface. This is one of the main things I’ve been wanting for a long time.
-   - Substack doesn’t offer an API, so I had to write/edit/upload/format the emails all in the Substack browser window. It’s easy and familiar, but not the way I prefer to do it.
-   - /1.  I love using Buttondown's API to write locally and upload/edit emails with images through a programming interface./
-   - /2.  Their api and my custom scripts (python) made my migration (emails, subscribers, images) very easy and a fun challenge of a programming project./
-  - /3.  buttondown's API (lowlevel programming interface) is really nice for my workflow. Instead of writing (or copy/paste) into a browser's substack editor directly, and uploading images directly, I can write, edit, manage images, and organize each post on my laptop. I use buttondown's APIs to make the process easier for me./
-2. Buttondown is narrowly but intensely *focused on newsletters*, not being social media or anything else.
-   - I paid $290/year to get setup, with my custom domain and number of subscribers. So far it’s working great for my process.
-   - /5.  Buttondown's fee ($290/year for me) is not insignificant compared to Substack's free model with 10% paid subscriptions fees, but it's worth it considering the tradeoffs and to have greater ownership of my content./
-3. Buttondown still has a small startup feel, with a few quirks, but with a *very involved, tech-focused founder* and engineering/support staff who personally respond to questions and requests.
-   - /4.  Their support (email-based) is great and responsive, and I find that their founder is very active and responsive to questions I have. They're even changed their api and are fixing a very minor bug that I reported, so in that sense, Buttondown feels like a very small startup company that may still have quirks here and there, but is run by a very smart guy who understands the tech and is personally dedicated to making it work./
-   - /6.  Compared to Substack, Buttondown feels smaller, more bare-bones, and more focused on being a newsletter platform and not growing beyond that./
-4. Buttondown is *bare-bones*: email sending + a simple email archive with limited design options (I like the limitations; simpler is better).
-   - They don’t have a social media feed of posts (like twitter/instagram/Substack Notes), and therefore no algorithms or extra features to help promote your newsletter or get you new subscribers. That would be all up to you.
-   - It feels more like writing a blog in the 1990’s.
-   - /3.  Limited default options for displaying your archive of emails (but probably greater flexibility if you like to code html pages with css)/
-5. Without Substack’s built-in network and algorithm, being on a system like Buttondown means your newsletter may be *more isolated*, without random readers happening across it through the Substack feed/recommendations and subscribing.
-
-By contrast:
-
-1. Substack has grown into something much more than I need (*social media, video, podcasts, app*), and will probably continue to grow in new ways in the future.
-   - But, it is a great *all-in-one solution* that makes many things easier. Being part of that growth can be exciting and probably offers more future potential for both small and large newsletter writers. This is a valid reason to stay on Substack to see and be part of where it goes.
-   - It’s also nice to feel part of the same *community* with other amazing writers (“we’re all Substack writers, together with Brad Mehldau, Michael Chabon, Ethan Iverson, ...”) but there’s a dark flip side to that community too...
-2. I like Substack for certain things: it’s so *easy to use and get started with*, and it continues to get more popular with authors that I love to read.
-   - It’s a strange time to leave Substack since it seems to be really taking off. I’ll still use Substack to get emails from newsletters that I love to read.
-   - I don’t know what the future holds though. I may eventually stop using Substack altogether (stop posting Notes, delete that account, remove their app), and just continue to read everyone’s Substack newsletters through emails.
-3. Being part of Substack may help readers understand that your newsletter is *“safe”* (part of the Substack ecosystem and payment system) and they can confidently subscribe/upgrade/unsubscribe/follow if they are familiar with Substack or other Substack newsletters.
-   - Substack makes this very easy. But, on the other hand, their prompts to subscribe/upgrade can be obtrusive or annoying, and I didn’t like the constant subtle pressure that Substack inserts into my emails/web archive for readers to upgrade or “pledge support”.
-   - /9.  Substack’s model, with their prompts to sign up (and upgrade to paid)/
-   - With an independent newsletter, or a newsletter on Buttondown, some readers may feel less secure about a non-Substack newsletter, and they may not want to enter their email address on a random site, much less upgrade to a paid subscription. I am not sure about this yet, and am still waiting to see how trends develop.
-   - /8.  I am not sure about this yet, but I think that organic growth on Substack is pretty good, included as part of their all-in-one package with recommendations, Notes, leader-boards, their algorithm, etc. If you want more readers and easy organic growth, I think Substack has been good for my newsletter, but to what degree, I don’t know. On the other hand, some of Substack’s “dark patterns” (not great) make me think that some of my readers have signed up for my newsletter without even realizing it./
-
-More comparisons:
-  - /7.  Another way to compare: Substack is great for writers who want all-in-one service, where all you have to do basically is write, configure settings, and do almost everything easily in a browser window. Buttondown allows this too, but their extra features (API, CSS editing, certain settings) gives more options for writers who are looking for more control over certain tech/web-oriented things./
-  - /1.  cost tradeoff: substack taking 10% vs a fixed subscription cost for buttondown (I paid $290/year on buttondown)./
-  - /2.  ownership: with substack's ever expanding, new features, and social media + video leanings, I felt more like my writing was being used to promote things I had nothing to do with. With Buttondown.../
-
-/I also have a lot of conflicting thoughts about using Substack, the obvious ones along the lines of many other posts on the topic re: "leaving substack/quitting substack/goodbye substack"... I do want to expand on my issues with Substack with more observations someday but that's a much longer topic. Also, I want to let my subscribers know why I moved my newsletter off Substack, if this move ends up being permanent. I am fairly certain that it is, but I wanted to give myself about two months to test if my newsletter was working well on buttondown. So far, it is, but../
-
-
-*  Message to readers
-
-NOTES:
-- copied and modified from draft post and https://jazzofjapan.substack.com/p/important-note-about-jazz-of-japan
-- this will be published to jazzofjapan.substack.com at /p/jazz-of-japan-has-moved
-
------
-<center>
-
-/Jazz of Japan has moved to a new platform./
-
-/If you were a current subscriber to this newsletter here on Substack (as of Feb 16, 2026), you don’t need to do a thing. You're still on the subscribers list./
-
-</center>
-
------
-
-What’s new?
-
-- The newsletter and archive are still on https://www.jazzofjapan.com
-  - /…but now off Substack/
-- Only the underlying platform has changed
-  - /The platform provides the emails, web archive, and subscription management/
-- The newsletter and archive is no longer on jazzofjapan.substack.com
-  - /It’s been completely migrated to www.jazzofjapan.com (aka buttondown.com/jazzofjapan)/
-
-If you’d like to subscribe, unsubscribe or confirm your subscription to *Jazz of Japan*, please go to *https://www.jazzofjapan.com*.
-
-TK VER 1:
-
-*On Jazz of Japan:*
-- Since Jazz of Japan is now independent of Substack, you can manage your subscription (subscribe/unsubscribe/upgrade) at *https://www.jazzofjapan.com*
-
-*On Substack:*
-- Separately, you can manage your Substack account at https://substack.com/settings (*general Substack settings, other newsletters, or close your Substack account*).
-
-TK VER 2:
-
-Independently, you can manage your **Substack** account at https://substack.com/settings (for general Substack settings like following, subscribing to other newsletters, deleting your Substack account — this won’t affect your subscription to Jazz of Japan).
-
-VER 1:
-
-To reach out with any questions, concerns, or comments, you can reply to any Jazz of Japan newsletter email. Or, send a Substack message through https://substack.com/@brianmccrory.
-
-As always, thank you for your interest and support!
-
-— Brian from Jazz of Japan
-
-P.S. If you are subscribed but haven’t received the newsletter in several weeks after this move, check the Spam folder.
-
-VER 2:
-
-To reach out with any questions, concerns, or comments:
-
-- reply to any newsletter email
-- Send a Substack message to *@brianmccrory*
-
-As always, thank you for your interest and support!
-
-P.S. If you are subscribed but haven’t received the newsletter in several weeks, check the Spam folder.
-
-* Sending Domains:
-
-Emails sent to the Jazz of Japan newsletter will now be coming from the domain =jazzofjapan.com=. There may be a period of dust settling, but it shouldn’t be too bad. All archives and subscriptions have been transferred and everything should work the same. Any questions or comments, just reply to the newsletter and I’ll get back to you.
-
-Oh, and if this email lands in your Spam folder for some reason, please mark it as “Not Spam” and move it to your Inbox. This should help to properly deliver future emails from the newsletter. Thanks!
-
-* About Premium Subscriptions and Stripe
-
-I started this project by publishing articles on Jazz of Japan in January 2018 and in September 2024, started to offer premium (paid) subscriptions for Jazz of Japan through the Substack platform, setting the membership prices to the lowest levels supported there ($5/month or $50/year). I was blown away by the support and subscribers I gathered there.
-
-In February 2026, I moved off of Substack to run this project /independently/. I switched from using Substack to Buttondown as platform to manage the newsletter emails and subscription system.
-
-Fortunately, both newsletter systems (Substack and Buttondown) use the same underlying payment platform (Stripe). This means that subscribers who signed up for a paid subscription on Substack would not be affected by the change, and makes it just as easy for new members to upgrade to a paid subscription.
+- Buttondown was now the platform I used for newsletter emails, the web archive, and subscription management
+- The newsletter and archive were completely migrated and no longer on Substack
+- The newsletter and archive were still on https://www.jazzofjapan.com which now pointed to Buttondown servers
+- Emails were now sent from my custom domain =jazzofjapan.com= instead of =substack.com= and reflected in the sender’s From: field
+- Both Substack and Buttondown use Stripe as their payment platform, so paid subscriptions continued [fn::There was a little bit of work required to get Substack support to disconnect Stripe without canceling my paid subscribers. Once this was done, no paid subscribers were affected by the change to Buttondown. There was one exception: Paid subscribers who upgraded on Substack using iOS in-app payments were managed through Apple, so their payment details could not be transferred to Buttondown through Stripe. Buttondown support was great in providing a quick workaround for this, which involved giving those iOS-based premium subscribers a free trial month, after which they could add payment details through Stripe when their trial ended.], and it was just as easy as before for newsletter subscribers to upgrade to a premium subscription if they wished.

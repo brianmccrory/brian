@@ -1,6 +1,6 @@
 #+title: Jekyll to Hugo migration
 #+date: 2025-03-15
-#+draft: false
+#+draft: true
 #+tags[]: tools
 
 * March 2025
