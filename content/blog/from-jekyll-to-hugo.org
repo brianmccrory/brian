@@ -1,7 +1,7 @@
 #+title: From Jekyll to Hugo
 #+date: 2025-03-15
 #+draft: false
-#+tags[]: versions
+#+tags[]: tools
 
 Jekyll had become too slow as a convenient solution for editing Markdown files on my laptop. With hundreds of articles, thousands of media files (images, audio) files, and several data files, the reloading of the site after a file changed had become extremely slow. Each time a page changed (each time I changed and saved a file in my editor), there was a lag of about 60-120 seconds before Jekyll could reload the page with my changes. This made the writing process very burdensome for certain tasks. It seemed that slowness of Jekyll was a common frustration with Jekyll and large sites.
 

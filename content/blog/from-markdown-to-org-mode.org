@@ -1,7 +1,7 @@
 #+title: From Markdown to Org mode
 #+date: 2025-07-15
 #+draft: false
-#+tags[]: versions
+#+tags[]: tools
 
 My goal at this point was to simplify my writing environment by moving from Markdown files to Org mode files. Initially an exploratory project, I wanted to see what the effort would be to move to Org mode, and if there were enough advantages for me to write and save files in Org mode markup instead of Markdown markup. I also wanted to return to an Emacs-based writing environment, and while Emacs supports general-purpose formats like Markdown very well, Org mode goes further, as it is a native Emacs format and is more tightly integrated.
 
