@@ -1,11 +1,11 @@
 #+title: Offline-first writing
-#+date: 2026-04-24
+#+date: 2026-04-29
 #+draft: true
 #+tags[]: tools
 
 * 2018-2019: Writing in a browser
 
-When I started this project in early 2018, I created articles by writing directly in the browser. In the beginning, I would type directly into the WordPress editor running on my laptop and then upload files to WordPress running on AWS/Google. Later, when I switched to Substack, I would type directly into their web-based editor app, edit, and publish through Substack. The final versions of my work were saved on Substack servers. The only way I could get the latest version of an article was to load the webpage and copy the text or use Substack’s HTML-formatted exports.
+When I started this project in early 2018, I created articles by writing directly in the browser. In the beginning, I would type directly into the WordPress editor running on my laptop and then upload files to WordPress running on Amazon Web Service and Google App Engine at different times. Later, when I switched to Substack, I would type directly into their web-based editor app, edit, and publish through Substack. The final versions of my work were saved on Substack servers. The only way I could get the latest version of an article was to load the webpage and copy the text or use Substack’s HTML-formatted exports.
 
 ** A manual process
 
@@ -15,13 +15,13 @@ While writing the article text, I also needed to upload images and audio files t
 
 This browser-based environment for article writing and editing worked, but it made my writing process dependent on specific tools and conditions. These include the features, limitations, and quirks of WordPress, Substack, the OS, the browser, internet connections, and so on.
 
-In the early phases of this project, I was focused with getting things out in a reasonable format and at a steady pace. With those priorities, a browser-based writing process was a natural way to start and maintain for a while. I got used to it, but I didn’t the repetitive manual steps that were part of the process. Making widespread changes was daunting, so performing tasks like re-uploading images, adding sections, or updating the layout for every page would not be easy. For example, if I wanted to add a link to the footer of all pages in my Substack archive, my only option was to load, edit, and update each page one by one in a browser. To update hundreds of pages manually takes considerable time and effort and is an inherently error-prone process.
+In the early phases of this project, I was focused with getting things out in a reasonable format and at a steady pace. With those priorities, a browser-based writing process was a natural way to start and maintain for a while. I got used to it, but I didn’t like the repetitive manual steps that were part of the process. Making widespread changes was daunting, so performing tasks like re-uploading images, adding sections, or updating the layout for every page would not be easy. For example, if I wanted to add a link to the footer of all pages in my Substack archive, my only option was to load, edit, and update each page one by one in a browser. To update hundreds of pages manually takes considerable time and effort and is an inherently error-prone process.
 
 ** Browser-based editors
 
 I never liked writing directly into a browser. In a positive light, browser-based editors are convenient and powerful, and the slickness of some UIs can almost create a feeling of encouragement, like there’s nothing between you and your writing.
 
-On the other hand, typing in a browser can be frustrating. If your fingers are used to certain shortcuts or keystroke commands common in other programs, you have to readjust and remember that these keys may be mapped differently in the browser, or in the custom editor app running in that browser. (/“Grrrr... No, I don’t want to print the page/save the html/open a new browser window...”/) Relearning key shortcuts and internalizing them can be hard to do when you are focused on writing and muscle memory drives a lot of your automatic typing.
+On the other hand, typing in a browser can be frustrating. If your fingers are used to certain shortcuts or keystroke commands common in other programs, you have to readjust and remember that these keys may be mapped differently in the browser, or in the custom editor app running in that browser. (/“Grrr... No, I don’t want to print the page/save the html/open a new browser window...”/) Relearning key shortcuts and internalizing them can be hard to do when you are focused on writing and muscle memory drives a lot of your automatic typing.
 
 A browser-based writing environment can be especially annoying when the text grows long, goes through many edits, or is completely rewritten. If you want to revert changes, the undo command can only do so much, and it’s difficult or impossible to compare the current version with what was there before.
 

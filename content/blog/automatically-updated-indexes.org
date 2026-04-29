@@ -3,7 +3,7 @@
 #+draft: false
 #+tags[]: tools
 
-Most of my articles on Jazz of Japan were about individual albums. During the periods that I was publishing on Substack (in [[/v2-0-substack][v2.0]] and [[/v4-0-substack][v4.0]]), the articles appeared in my Substack archive as a flat list ordered by date with a thumbnail image and an excerpt. To supplement this archive-style index, I wanted to present the articles as a list of albums ordered by album release year, not just by the article post date ([[https://about.jazzofjapan.com/indexes/albums-index/][Albums Index]]). In addition, I wanted to create an index of all musicians included on all albums, with links to each album (each article) that each musician appears on ([[https://about.jazzofjapan.com/indexes/musicians-index/][Musicians Index]]). Finally, I also wanted a timeline-based list of articles to show the oldest to newest issues, like the Substack archive but simpler and customized for my article types ([[https://about.jazzofjapan.com/indexes/timeline/][Publish History Timeline]]).
+Most of my articles on Jazz of Japan were about individual albums. During the periods that I was publishing on Substack (in [[/v2-0-substack][v2.0]] and [[/v4-0-substack][v4.0]]), the articles appeared in my Substack archive as a flat list ordered by date with a thumbnail image and an excerpt. To supplement this archive-style index, I wanted to present the articles as a list of albums ordered by album release year, not just by the article post date (Albums Index). In addition, I wanted to create an index of all musicians included on all albums, with links to each album (each article) that each musician appears on (Musicians Index). Finally, I also wanted a timeline-based list of articles to show the oldest to newest issues, like the Substack archive but simpler and customized for my article types (Articles Index/Publish History Timeline).
 
 Most importantly, I wanted the indexes to be automatically regenerated each time I published a new article. That is, the new album should be added to the Albums Index, the musicians included on that album should be added to the Musicians Index, and the new article should be added to the Publish History Timeline. I also wanted to be able to easily update the indexes on demand, whenever I fixed a typo or changed a detail for an album, musician, or article.
 
@@ -80,3 +80,15 @@ Separately, because the index files are compatible with Jekyll and Hugo, I can a
 ** Destination
 
 These indexes are served by a GitHub repo using a custom subdomain assigned through DNS updates and GitHub settings. The root domain =<domain>.com= is the same custom domain used to serve the newsletter and archive (=www.<domain>.com=), but with a different subdomain name (=docs=, =about=, etc.) so that the indexes don’t conflict with the newsletter domain.
+
+* Consolidating resources
+
+Now that I could update articles through Buttondown’s API, I wanted to do the same with the indexes. This also allowed me to move indexes from the subdomain =about.<domain>.com= to the primary domain =www.<domain>.com=. I used the same tools and processes to regenerate and update the resources pages automatically each time a new article was published.
+
+My process still included updating the indexes through an API whenever I published or updated an article, and now I could update the indexes the same way. This replaced the GitHub-based process outlined above, since I had replaced the indexes on that =about= static site with two new =www= articles on Buttondown.
+
+For this change two new articles were added to the archive: [[https://www.jazzofjapan.com/archive/about][About Jazz of Japan]] and [[https://www.jazzofjapan.com/archive/index][Jazz of Japan Index]]. I set their published date to the original date of the site in 2018, so that they would appear first in the archive. To support links to the =about= site that were previously shared, I added redirects in the old pages to automatically redirect to the new pages.
+
+After this change, everything was on the primary =www= domain, making the indexes appear similar in style and layout to existing articles. This reinforces the fact that the two supplemental pages are on same site as the newsletter and articles (this impression can be weaker or confusing when the pages are located on a separate =about= subdomain with a different look and feel).
+
+Another benefit was that I could remove an extraneous component that was not longer necessary: the =about= static site on GitHub. The fewer moving parts, the better, at least for this type of writing-based project.
